@@ -6,3 +6,366 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
+
+/* line 11, ../sass/base.scss */
+.mt-lg {
+  margin-top: 55px;
+}
+
+/* line 15, ../sass/base.scss */
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+/* line 20, ../sass/base.scss */
+body {
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+/* line 25, ../sass/base.scss */
+.grid {
+  text-align: center;
+}
+/* line 27, ../sass/base.scss */
+.grid .content {
+  display: grid;
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 100vh;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 1rem;
+}
+
+/* line 39, ../sass/base.scss */
+.grid-courses {
+  padding-top: 16%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+/* line 48, ../sass/base.scss */
+.avatar {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  background: url("../images/wearing_a_mask__monochromatic.svg");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: top;
+  background-position-x: -190px;
+}
+
+/* line 1, ../sass/partials/shared-components/_head-footer.scss */
+.header.sticky {
+  box-shadow: 0 0 .4em #8e74a0;
+  background-color: #e9cafd;
+  padding: .5em 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 10;
+}
+
+/* line 13, ../sass/partials/shared-components/_head-footer.scss */
+.header.sticky ul li a {
+  color: #854eaa;
+}
+
+/* line 17, ../sass/partials/shared-components/_head-footer.scss */
+header,
+footer {
+  background-color: #e9cafd;
+  display: flex;
+  padding: .5em 1em;
+  justify-content: flex-end;
+}
+
+/* line 24, ../sass/partials/shared-components/_head-footer.scss */
+header {
+  transition: 0.6s;
+  background-color: #f5f5f5;
+}
+
+/* line 28, ../sass/partials/shared-components/_head-footer.scss */
+header ul li,
+footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* line 34, ../sass/partials/shared-components/_head-footer.scss */
+header ul li {
+  margin-right: 20px;
+}
+
+/* line 37, ../sass/partials/shared-components/_head-footer.scss */
+header ul li a {
+  transition: 0.6s;
+  text-decoration: none;
+  color: #562677;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/*   */
+/* line 2, ../sass/partials/_landing.scss */
+.bkg-pattern {
+  display: inline-block;
+  width: 75%;
+  z-index: -2;
+  position: absolute;
+  opacity: .5;
+  top: -50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(285deg);
+}
+
+/* line 15, ../sass/partials/_landing.scss */
+.hero {
+  text-align: center;
+  padding: 0;
+  grid-column: 1/6;
+  grid-row: 1;
+  margin: 6% 0;
+}
+
+/* line 22, ../sass/partials/_landing.scss */
+h1 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .2em;
+}
+
+/* line 27, ../sass/partials/_landing.scss */
+h1:after {
+  content: "";
+  background: #e9cafd;
+  opacity: 0.7;
+  width: 115%;
+  height: 40%;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  z-index: -1;
+}
+
+/* line 39, ../sass/partials/_landing.scss */
+.services {
+  text-align: left;
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+/* line 45, ../sass/partials/_landing.scss */
+.myPath {
+  text-align: left;
+  position: relative;
+  padding: 6% 0 0 20%;
+  overflow: hidden;
+}
+
+/* line 51, ../sass/partials/_landing.scss */
+.myPath .topic {
+  position: absolute;
+  z-index: 2;
+  color: black;
+}
+
+/* line 57, ../sass/partials/_landing.scss */
+.myPath .bg-image {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 0px;
+  background: url("../images/web_developer_monochromatic.svg");
+  display: block;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 80%;
+  background-position: center;
+}
+
+/* line 70, ../sass/partials/_landing.scss */
+.topic span {
+  display: block;
+  color: #a19d9d;
+}
+
+/* line 75, ../sass/partials/_landing.scss */
+.grid-courses .card {
+  height: 150px;
+  padding-top: 50px;
+}
+
+/* line 80, ../sass/partials/_landing.scss */
+.grid-courses .card .head {
+  position: relative;
+  margin-bottom: 15%;
+}
+
+/* line 85, ../sass/partials/_landing.scss */
+.grid-courses .card .head span {
+  position: relative;
+}
+
+/* line 89, ../sass/partials/_landing.scss */
+.grid-courses .card .head span img {
+  max-width: 250px;
+  width: 250px;
+  height: 125px;
+  position: absolute;
+  top: -85px;
+  left: 10px;
+}
+
+/*
+    widget
+*/
+/* line 103, ../sass/partials/_landing.scss */
+.widget {
+  background-color: #e9cafd;
+  text-align: center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4em 0;
+}
+
+/* line 113, ../sass/partials/_landing.scss */
+.widget p:last-of-type {
+  margin-bottom: 20px;
+}
+
+/* line 116, ../sass/partials/_landing.scss */
+.widget .btn {
+  background: #854eaa;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/*
+PATH LEARNING
+*/
+/* line 132, ../sass/partials/_landing.scss */
+.learning-path {
+  display: grid;
+  max-width: 1080px;
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 250px 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+/* line 141, ../sass/partials/_landing.scss */
+.experience {
+  position: relative;
+}
+
+/* line 144, ../sass/partials/_landing.scss */
+.experience .bg2-image {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  left: 40px;
+  background: url("../images/team_work_monochromatic.svg");
+  display: block;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 80%;
+  background-position: center;
+}
+
+/* line 157, ../sass/partials/_landing.scss */
+.tools {
+  position: relative;
+  top: 90px;
+  box-shadow: 0 0 .4em #e9cafd;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/* line 168, ../sass/partials/_landing.scss */
+.tools div {
+  opacity: 0;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+/* line 178, ../sass/partials/_landing.scss */
+.tools div.active {
+  opacity: 1;
+}
+
+/* line 182, ../sass/partials/_landing.scss */
+.tools div .bg-item {
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+  background-repeat: no-repeat !important;
+}
+
+/* line 189, ../sass/partials/_landing.scss */
+.tools div .bg-item {
+  background: url("../images/two-colors/user_interface_.svg");
+}
+
+/* line 193, ../sass/partials/_landing.scss */
+.tools div .bg-item.img1 {
+  background: url("../images/two-colors/mobile_phone.svg");
+}
+
+/* line 196, ../sass/partials/_landing.scss */
+.tools div .bg-item.img2 {
+  background: url("../images/two-colors/scrum_board.svg");
+}
+
+/* line 199, ../sass/partials/_landing.scss */
+.tools div .bg-item.img3 {
+  background: url("../images/two-colors/html.svg");
+}
+
+/* line 202, ../sass/partials/_landing.scss */
+.tools div .bg-item.img4 {
+  background: url("../images/two-colors/css.svg");
+}
+
+/* line 205, ../sass/partials/_landing.scss */
+.tools div .bg-item.img5 {
+  background: url("../images/two-colors/javascript.svg");
+}
+
+/* line 208, ../sass/partials/_landing.scss */
+.tools div .bg-item.img6 {
+  background: url("../images/two-colors/java.svg");
+}
