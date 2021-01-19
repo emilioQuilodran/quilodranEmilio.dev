@@ -38,35 +38,10 @@ h1:after {
 
 .services {
     text-align: left;
-    grid-column: 2/4;
+    grid-column: 1/4;
     grid-row: 2/4;
+    text-align: center;
 }
-
-.myPath {
-    text-align: left;
-    position: relative;
-    padding: 6% 0 0 20%;
-    overflow: hidden;
-}
-.myPath .topic {
-    position: absolute;
-    z-index: 2;
-    color: black;
-}
-
-.myPath .bg-image {
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: 0px;
-    background: url("../images/web_developer_monochromatic.svg");
-    display: block;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 80%;
-    background-position: center;
-}
-
 .topic span {
     display: block;
     color: rgb(161, 157, 157);
@@ -92,7 +67,7 @@ h1:after {
     height: 125px;
     position: absolute;
     top: -85px;
-    left: 10px;
+    left: -125px;
 }
 
 
@@ -123,6 +98,10 @@ h1:after {
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
+}
+
+#courses {
+    min-height: 95vh;
 }
 
 /*

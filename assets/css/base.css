@@ -65,6 +65,26 @@ body {
   background-position-x: -190px;
 }
 
+/* line 61, ../sass/base.scss */
+#spinner {
+  display: inline-block;
+  margin: 0 0 auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s ease-in infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* line 1, ../sass/partials/shared-components/_head-footer.scss */
 .header.sticky {
   box-shadow: 0 0 .4em #8e74a0;
@@ -89,7 +109,7 @@ footer {
   background-color: #e9cafd;
   display: flex;
   padding: .5em 1em;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /* line 24, ../sass/partials/shared-components/_head-footer.scss */
@@ -167,76 +187,48 @@ h1:after {
 /* line 39, ../sass/partials/_landing.scss */
 .services {
   text-align: left;
-  grid-column: 2/4;
+  grid-column: 1/4;
   grid-row: 2/4;
+  text-align: center;
 }
 
 /* line 45, ../sass/partials/_landing.scss */
-.myPath {
-  text-align: left;
-  position: relative;
-  padding: 6% 0 0 20%;
-  overflow: hidden;
-}
-
-/* line 51, ../sass/partials/_landing.scss */
-.myPath .topic {
-  position: absolute;
-  z-index: 2;
-  color: black;
-}
-
-/* line 57, ../sass/partials/_landing.scss */
-.myPath .bg-image {
-  position: absolute;
-  z-index: 1;
-  top: 50px;
-  left: 0px;
-  background: url("../images/web_developer_monochromatic.svg");
-  display: block;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 80%;
-  background-position: center;
-}
-
-/* line 70, ../sass/partials/_landing.scss */
 .topic span {
   display: block;
   color: #a19d9d;
 }
 
-/* line 75, ../sass/partials/_landing.scss */
+/* line 50, ../sass/partials/_landing.scss */
 .grid-courses .card {
   height: 150px;
   padding-top: 50px;
 }
 
-/* line 80, ../sass/partials/_landing.scss */
+/* line 55, ../sass/partials/_landing.scss */
 .grid-courses .card .head {
   position: relative;
   margin-bottom: 15%;
 }
 
-/* line 85, ../sass/partials/_landing.scss */
+/* line 60, ../sass/partials/_landing.scss */
 .grid-courses .card .head span {
   position: relative;
 }
 
-/* line 89, ../sass/partials/_landing.scss */
+/* line 64, ../sass/partials/_landing.scss */
 .grid-courses .card .head span img {
   max-width: 250px;
   width: 250px;
   height: 125px;
   position: absolute;
   top: -85px;
-  left: 10px;
+  left: -125px;
 }
 
 /*
     widget
 */
-/* line 103, ../sass/partials/_landing.scss */
+/* line 78, ../sass/partials/_landing.scss */
 .widget {
   background-color: #e9cafd;
   text-align: center;
@@ -248,12 +240,12 @@ h1:after {
   margin: 4em 0;
 }
 
-/* line 113, ../sass/partials/_landing.scss */
+/* line 88, ../sass/partials/_landing.scss */
 .widget p:last-of-type {
   margin-bottom: 20px;
 }
 
-/* line 116, ../sass/partials/_landing.scss */
+/* line 91, ../sass/partials/_landing.scss */
 .widget .btn {
   background: #854eaa;
   color: white;
@@ -266,10 +258,15 @@ h1:after {
   text-decoration: none;
 }
 
+/* line 103, ../sass/partials/_landing.scss */
+#courses {
+  min-height: 95vh;
+}
+
 /*
 PATH LEARNING
 */
-/* line 132, ../sass/partials/_landing.scss */
+/* line 111, ../sass/partials/_landing.scss */
 .learning-path {
   display: grid;
   max-width: 1080px;
@@ -280,12 +277,12 @@ PATH LEARNING
   grid-row-gap: 1rem;
 }
 
-/* line 141, ../sass/partials/_landing.scss */
+/* line 120, ../sass/partials/_landing.scss */
 .experience {
   position: relative;
 }
 
-/* line 144, ../sass/partials/_landing.scss */
+/* line 123, ../sass/partials/_landing.scss */
 .experience .bg2-image {
   position: absolute;
   z-index: 1;
@@ -299,7 +296,7 @@ PATH LEARNING
   background-position: center;
 }
 
-/* line 157, ../sass/partials/_landing.scss */
+/* line 136, ../sass/partials/_landing.scss */
 .tools {
   position: relative;
   top: 90px;
@@ -311,7 +308,7 @@ PATH LEARNING
   overflow: hidden;
 }
 
-/* line 168, ../sass/partials/_landing.scss */
+/* line 147, ../sass/partials/_landing.scss */
 .tools div {
   opacity: 0;
   position: absolute;
@@ -322,12 +319,12 @@ PATH LEARNING
   overflow: hidden;
 }
 
-/* line 178, ../sass/partials/_landing.scss */
+/* line 157, ../sass/partials/_landing.scss */
 .tools div.active {
   opacity: 1;
 }
 
-/* line 182, ../sass/partials/_landing.scss */
+/* line 161, ../sass/partials/_landing.scss */
 .tools div .bg-item {
   width: 200px;
   height: 150px;
@@ -335,37 +332,37 @@ PATH LEARNING
   background-repeat: no-repeat !important;
 }
 
-/* line 189, ../sass/partials/_landing.scss */
+/* line 168, ../sass/partials/_landing.scss */
 .tools div .bg-item {
   background: url("../images/two-colors/user_interface_.svg");
 }
 
-/* line 193, ../sass/partials/_landing.scss */
+/* line 172, ../sass/partials/_landing.scss */
 .tools div .bg-item.img1 {
   background: url("../images/two-colors/mobile_phone.svg");
 }
 
-/* line 196, ../sass/partials/_landing.scss */
+/* line 175, ../sass/partials/_landing.scss */
 .tools div .bg-item.img2 {
   background: url("../images/two-colors/scrum_board.svg");
 }
 
-/* line 199, ../sass/partials/_landing.scss */
+/* line 178, ../sass/partials/_landing.scss */
 .tools div .bg-item.img3 {
   background: url("../images/two-colors/html.svg");
 }
 
-/* line 202, ../sass/partials/_landing.scss */
+/* line 181, ../sass/partials/_landing.scss */
 .tools div .bg-item.img4 {
   background: url("../images/two-colors/css.svg");
 }
 
-/* line 205, ../sass/partials/_landing.scss */
+/* line 184, ../sass/partials/_landing.scss */
 .tools div .bg-item.img5 {
   background: url("../images/two-colors/javascript.svg");
 }
 
-/* line 208, ../sass/partials/_landing.scss */
+/* line 187, ../sass/partials/_landing.scss */
 .tools div .bg-item.img6 {
   background: url("../images/two-colors/java.svg");
 }
