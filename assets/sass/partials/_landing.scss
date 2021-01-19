@@ -15,7 +15,7 @@
 .hero {
     text-align: center;
     padding: 0;
-    grid-column: 1/6;
+    grid-column: 1/4;
     grid-row: 1;
     margin: 6% 0;
 }
@@ -39,7 +39,7 @@ h1:after {
 .services {
     text-align: left;
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/2;
     text-align: center;
 }
 .topic span {
@@ -68,6 +68,10 @@ h1:after {
     position: absolute;
     top: -85px;
     left: -125px;
+}
+
+.grid-courses .card .body {
+    padding: 0 50px;
 }
 
 

@@ -9,7 +9,7 @@
 
 /* line 11, ../sass/base.scss */
 .mt-lg {
-  margin-top: 55px;
+  margin-top: 20px;
 }
 
 /* line 15, ../sass/base.scss */
@@ -42,7 +42,7 @@ body {
 
 /* line 39, ../sass/base.scss */
 .grid-courses {
-  padding-top: 16%;
+  padding-top: 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -159,7 +159,7 @@ header ul li a {
 .hero {
   text-align: center;
   padding: 0;
-  grid-column: 1/6;
+  grid-column: 1/4;
   grid-row: 1;
   margin: 6% 0;
 }
@@ -188,7 +188,7 @@ h1:after {
 .services {
   text-align: left;
   grid-column: 1/4;
-  grid-row: 2/4;
+  grid-row: 2/2;
   text-align: center;
 }
 
@@ -225,10 +225,15 @@ h1:after {
   left: -125px;
 }
 
+/* line 73, ../sass/partials/_landing.scss */
+.grid-courses .card .body {
+  padding: 0 50px;
+}
+
 /*
     widget
 */
-/* line 78, ../sass/partials/_landing.scss */
+/* line 82, ../sass/partials/_landing.scss */
 .widget {
   background-color: #e9cafd;
   text-align: center;
@@ -240,12 +245,12 @@ h1:after {
   margin: 4em 0;
 }
 
-/* line 88, ../sass/partials/_landing.scss */
+/* line 92, ../sass/partials/_landing.scss */
 .widget p:last-of-type {
   margin-bottom: 20px;
 }
 
-/* line 91, ../sass/partials/_landing.scss */
+/* line 95, ../sass/partials/_landing.scss */
 .widget .btn {
   background: #854eaa;
   color: white;
@@ -258,7 +263,7 @@ h1:after {
   text-decoration: none;
 }
 
-/* line 103, ../sass/partials/_landing.scss */
+/* line 107, ../sass/partials/_landing.scss */
 #courses {
   min-height: 95vh;
 }
@@ -266,7 +271,7 @@ h1:after {
 /*
 PATH LEARNING
 */
-/* line 111, ../sass/partials/_landing.scss */
+/* line 115, ../sass/partials/_landing.scss */
 .learning-path {
   display: grid;
   max-width: 1080px;
@@ -277,12 +282,12 @@ PATH LEARNING
   grid-row-gap: 1rem;
 }
 
-/* line 120, ../sass/partials/_landing.scss */
+/* line 124, ../sass/partials/_landing.scss */
 .experience {
   position: relative;
 }
 
-/* line 123, ../sass/partials/_landing.scss */
+/* line 127, ../sass/partials/_landing.scss */
 .experience .bg2-image {
   position: absolute;
   z-index: 1;
@@ -296,7 +301,7 @@ PATH LEARNING
   background-position: center;
 }
 
-/* line 136, ../sass/partials/_landing.scss */
+/* line 140, ../sass/partials/_landing.scss */
 .tools {
   position: relative;
   top: 90px;
@@ -308,7 +313,7 @@ PATH LEARNING
   overflow: hidden;
 }
 
-/* line 147, ../sass/partials/_landing.scss */
+/* line 151, ../sass/partials/_landing.scss */
 .tools div {
   opacity: 0;
   position: absolute;
@@ -319,12 +324,12 @@ PATH LEARNING
   overflow: hidden;
 }
 
-/* line 157, ../sass/partials/_landing.scss */
+/* line 161, ../sass/partials/_landing.scss */
 .tools div.active {
   opacity: 1;
 }
 
-/* line 161, ../sass/partials/_landing.scss */
+/* line 165, ../sass/partials/_landing.scss */
 .tools div .bg-item {
   width: 200px;
   height: 150px;
@@ -332,37 +337,37 @@ PATH LEARNING
   background-repeat: no-repeat !important;
 }
 
-/* line 168, ../sass/partials/_landing.scss */
+/* line 172, ../sass/partials/_landing.scss */
 .tools div .bg-item {
   background: url("../images/two-colors/user_interface_.svg");
 }
 
-/* line 172, ../sass/partials/_landing.scss */
+/* line 176, ../sass/partials/_landing.scss */
 .tools div .bg-item.img1 {
   background: url("../images/two-colors/mobile_phone.svg");
 }
 
-/* line 175, ../sass/partials/_landing.scss */
+/* line 179, ../sass/partials/_landing.scss */
 .tools div .bg-item.img2 {
   background: url("../images/two-colors/scrum_board.svg");
 }
 
-/* line 178, ../sass/partials/_landing.scss */
+/* line 182, ../sass/partials/_landing.scss */
 .tools div .bg-item.img3 {
   background: url("../images/two-colors/html.svg");
 }
 
-/* line 181, ../sass/partials/_landing.scss */
+/* line 185, ../sass/partials/_landing.scss */
 .tools div .bg-item.img4 {
   background: url("../images/two-colors/css.svg");
 }
 
-/* line 184, ../sass/partials/_landing.scss */
+/* line 188, ../sass/partials/_landing.scss */
 .tools div .bg-item.img5 {
   background: url("../images/two-colors/javascript.svg");
 }
 
-/* line 187, ../sass/partials/_landing.scss */
+/* line 191, ../sass/partials/_landing.scss */
 .tools div .bg-item.img6 {
   background: url("../images/two-colors/java.svg");
 }
