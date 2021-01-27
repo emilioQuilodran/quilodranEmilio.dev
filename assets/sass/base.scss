@@ -36,9 +36,9 @@ body {
 }
 
 .grid-courses {
-    padding-top: 10%;
+    padding-top: 7%;
     display: grid;
-    grid-template-columns: repeat( 2, 1fr );
+    grid-template-columns: repeat( 3, 1fr );
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -64,7 +64,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border-left-color: #09f;
+    border-left-color: #854eaa;
     animation: spin 1s ease-in infinite;
 }
 @keyframes spin {
