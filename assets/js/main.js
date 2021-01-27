@@ -19,16 +19,21 @@ function getCourses(){
 }
 function coursesList(courses){
     courses.map((course, i) =>{
+        let card = document.createElement("div");
         let title = document.createElement("h3");
         let avatar = document.createElement("img");
-        let career = document.createElement("p")
+        let career = document.createElement("p");
+
+        card.classList.add("card");
+
         title.innerHTML = ++i + ". " + course.title;
         avatar.src = course.badge;
         avatar.width = "65";
         career.innerHTML = course.career;
-        div_courses.appendChild(avatar);
-        div_courses.appendChild(title);
-        div_courses.appendChild(career);
+        card.appendChild(avatar);
+        card.appendChild(title);
+        card.appendChild(career);
+        div_courses.appendChild(card);
         document.querySelector("#spinner").style.display = "none";
     });
 }

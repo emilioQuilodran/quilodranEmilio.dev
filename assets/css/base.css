@@ -29,18 +29,17 @@ body {
   text-align: center;
 }
 /* line 27, ../sass/base.scss */
-.grid .content {
+.grid .content, .grid #courses {
   display: grid;
   max-width: 1180px;
   margin: 0 auto;
-  height: 100vh;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 3rem;
   grid-row-gap: 1rem;
 }
 
-/* line 39, ../sass/base.scss */
+/* line 38, ../sass/base.scss */
 .grid-courses {
   padding-top: 10%;
   display: grid;
@@ -50,7 +49,7 @@ body {
   grid-row-gap: 1rem;
 }
 
-/* line 48, ../sass/base.scss */
+/* line 47, ../sass/base.scss */
 .avatar {
   border-radius: 50%;
   display: block;
@@ -65,7 +64,7 @@ body {
   background-position-x: -190px;
 }
 
-/* line 61, ../sass/base.scss */
+/* line 60, ../sass/base.scss */
 #spinner {
   display: inline-block;
   margin: 0 0 auto;
